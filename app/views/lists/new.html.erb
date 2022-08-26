@@ -1,0 +1,8 @@
+<h1> Add your list!</h1>
+
+<%= simple_form_for [@list] do |f| %>
+  <%= f.input :name %>
+  <%= f.submit "Add a list", class: "btn btn-primary" %>
+<% end %>
+
+<%=link_to "Go back to index", lists_path %>

@@ -1,0 +1,11 @@
+<h1>Bookmarks for this list </h1>
+
+<%=link_to "Go back to all lists", lists_path %>
+<%=link_to "Add a new bookmark", new_list_bookmark_path %>
+
+<%@bookmarks.each do |bookmark| %>
+<ul>
+<li><%=bookmark.comment%></li>
+<li><img src="<%=bookmark.movie.poster_url%>" alt=""> </li>
+</ul>
+<%end %>
